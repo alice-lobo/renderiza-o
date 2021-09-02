@@ -6,7 +6,7 @@ const hasCustomer = true;
 
 const App = () => {
 
-  const renderShowHistory = () => (
+  const renderShowHistory = (
     <div>
       Clique no botão abaixo para vizualizar o histórico
       <br />
@@ -14,7 +14,7 @@ const App = () => {
     </div>                
   )
 
-  const renderAddCustomer = () => (
+  const renderAddCustomer = (
     <div>
       Clique abaixo para cadastrar os clientes
       <br />
@@ -34,7 +34,7 @@ const App = () => {
       <p>Digital Innovation One</p>
       <p>Bem-vindo</p>
       <br />
-      {hasCustomer ? renderShowHistory() : renderAddCustomer()}
+      {hasCustomer ? renderShowHistory : renderAddCustomer}
       <div>
         {showCustomer()}
       </div>
